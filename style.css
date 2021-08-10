@@ -75,7 +75,129 @@ body{
     min-height: 100vh;
     width: 100vw;
     background: linear-gradient(purple, var(--color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden !important;
 }
+
+.home .banner{
+    color: #fff;
+    font-size: 5rem;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,0.3);
+}
+
+.home .slogan{
+    color: #eee;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.home button{
+    height: 4rem;
+    width: 18rem;
+    background: #fff;
+    color: #444;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,0.3);
+}
+
+.home button:hover{
+    letter-spacing: .1rem;
+}
+
+/* .home .wave{
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    height: 11rem;
+    background: url(images/wave2.png);
+    background-size: 100rem 11rem;
+    background-repeat: repeat-x;
+    animation: waves 10s linear infinite;
+}
+
+
+@keyframes waves{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 0;
+    }
+} */
+
+.home .fa-cog{
+    position: absolute;
+    font-size: 30rem;
+    opacity: 0.15;
+    color: #fff;
+    animation: rotate 10s linear infinite;
+}
+
+.home .nut1{
+    top: 10%;
+    left: -15rem;
+}
+
+.home .nut2{
+    bottom: 10%;
+    right: -13rem;
+    animation-direction: reverse;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Queries */
 @media (max-width: 760px){
@@ -117,6 +239,14 @@ body{
     }
 
     .header .nav-toggle{
-        top:7%;
+        top:5.5rem;
+    }
+
+    .home .banner{
+        font-size: 4rem;
+    }
+
+    .home .slogan{
+        font-size: 1.7rem;
     }
 }
