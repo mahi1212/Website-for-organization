@@ -2,7 +2,6 @@
 
 :root{
     --color: #6C5CE7;
-
 }
 
 *{
@@ -13,14 +12,62 @@
     transition: all .2s linear;
     text-transform: capitalize;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 html{
     font-size: 62.5%;
 }
 
-body{
+/* body{
     overflow: hidden;
+} */
+
+.heading{
+    margin: 2rem;
+    padding-top: 6rem;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: var(--color);
+    position: relative;
+}
+
+.heading::before, .heading::after{
+    content: '';
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-top: .4rem solid var(--color);
+    border-left: .4rem solid var(--color);
+    letter-spacing: .4rem;
+}
+
+.heading::before{
+    top:5.8rem; left: -2rem;
+  }
+  
+.heading::after{
+    bottom:-.5rem; right: -2rem;
+    transform: rotate(180deg);
+}
+
+.btn{
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    background-color: var(--color);
+    color: #fff;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 15rem;
+    padding: 0.3rem;
+    font-size: 1.7rem;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0 ,0.3);
+}
+
+.btn:hover{
+    letter-spacing: .1rem;
+    opacity: .8rem;
 }
 
 .header{
@@ -167,8 +214,43 @@ body{
     }
 }
 
+.about{
+    min-height: 80vh;
+    min-width: 100vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 4rem;
+    margin-top: -7rem;
+}
 
 
+.about .content h3{
+    margin-top: 10rem;
+}
+.about .row .content{
+    text-align: left;
+}
+.about .row .image img{
+    width: 50vw;
+}
+
+.about .content h3{
+    font-size: 3rem;
+    color: var(--color);
+}
+
+.about .content p{
+    font-size: 3rem;
+    color: #333;
+    padding: 1rem 0;
+}
 
 
 
@@ -254,5 +336,16 @@ body{
 
     .home .slogan{
         font-size: 1.7rem;
+    }
+
+    .about .row{
+        flex-flow: column;
+        padding: 0 2rem;
+        margin-top: 7rem;
+        text-align: left;
+    }
+
+    .about .row .image img{
+        width: 100vw;
     }
 }
