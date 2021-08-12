@@ -341,20 +341,20 @@ body{
   }
   
   .team .row .card .info span{
-    font-size: 1rem;
+    font-size: 1.8rem;
     color:var(--color);
   }
   
-  .team .row .card .info .icons a{
+.team .row .card .info .icons a{
     margin-top: 4rem;
     padding:0 1rem;
     font-size: 2rem;
     color:#333;
-  }
+}
   
-  .team .row .card .info .icons a:hover{
+.team .row .card .info .icons a:hover{
     color:var(--color);
-  }
+}
   
   .team .row .card::before, .team .row .card::after{
     content: '';
@@ -484,9 +484,24 @@ body{
     .team .row{
         flex-direction: column;
     }
-    
+
     .team .row .card{
-        height:35rem;
-        width:25rem;
-      }
+        height: 48rem;
+        width: 35rem;
+    }
+    .team .row .card .info h3{
+        font-size: 3rem;
+        color:#333;
+    }
+      
+    .team .row .card .info span{
+        font-size: 2.4rem;
+        color:var(--color);
+    }
+    .team .row .card .image img{
+        transform: scale(1.5);
+    }
+    .team .row .card .info{
+        margin-top: 5rem;
+    }
 }
