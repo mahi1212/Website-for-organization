@@ -214,7 +214,8 @@ html{
     }
 }
 
-.about{
+.about,
+.service{
     min-height: 80vh;
     min-width: 100vw;
     text-align: center;
@@ -222,7 +223,8 @@ html{
     overflow: hidden;
 }
 
-.about .row{
+.about .row,
+.service .row{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -230,23 +232,28 @@ html{
     margin-top: -7rem;
 }
 
-
+.service .content h3,
 .about .content h3{
     margin-top: 10rem;
 }
-.about .row .content{
+
+.about .row .content,
+.service .row .content{
     text-align: left;
 }
+
 .about .row .image img{
     width: 50vw;
 }
 
-.about .content h3{
+.about .content h3,
+.service .content h3{
     font-size: 3rem;
     color: var(--color);
 }
 
-.about .content p{
+.about .content p,
+.service .content p{
     font-size: 3rem;
     color: #333;
     padding: 1rem 0;
@@ -276,6 +283,11 @@ html{
     right: -10rem;
 }
 
+.service .row .image img{
+    width: 40vw;
+    display: inline-block;
+    margin-top: 15rem;
+}
 
 
 
@@ -361,6 +373,7 @@ html{
         font-size: 1.7rem;
     }
 
+    .service .row,
     .about .row{
         flex-flow: column;
         padding: 0 2rem;
@@ -368,7 +381,10 @@ html{
         text-align: left;
     }
 
+    .service .row .image img,
     .about .row .image img{
         width: 100vw;
+        padding: 2rem;
     }
+
 }
