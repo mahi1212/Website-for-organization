@@ -289,6 +289,67 @@ body{
     margin-top: 15rem;
 }
 
+.team{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color:#222;
+}
+
+.team .heading{
+    color: #fff;
+}
+
+.team .heading::before, .team .heading::after{
+    border-color: #fff;
+}
+
+.team .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team .row .card{
+    height: 35rem;
+    width: 25rem;
+    background: #fff;
+    text-align: center;
+    margin: 7rem 2rem;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-reflect: below .2rem linear-gradient(transparent 70%, #0004);
+}
+
+.team .row .card .image{
+    width: 100%;
+    margin: 1rem 0;
+    padding-top: 4rem;
+}
+
+.team .row .card .image img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    border: .5rem solid #fff;
+    transform: scale(1.2);
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);
+    object-fit: cover;
+}
+
+.team .row .card .info h3{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-top: 1.5rem;
+}
+
+.team .row .card .info span{
+    font-size: 1.8rem;
+    color: var(--color);
+}
+
+-----
 
 
 
