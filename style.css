@@ -380,10 +380,16 @@ html{
         margin-top: 7rem;
         text-align: left;
     }
+    
+    .service .row .content{
+        order: 2;
+    }
 
+    
     .service .row .image img,
     .about .row .image img{
         width: 100vw;
         padding: 2rem;
+        order: 1;
     }
 }
