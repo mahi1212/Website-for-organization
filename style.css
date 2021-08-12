@@ -19,9 +19,9 @@ html{
     font-size: 62.5%;
 }
 
-/* body{
-    overflow: hidden;
-} */
+body{
+    overflow-x: hidden;
+}
 
 .heading{
     margin: 2rem;
@@ -389,7 +389,6 @@ html{
     .service .row .image img,
     .about .row .image img{
         width: 100vw;
-        padding: 2rem;
         order: 1;
     }
 }
