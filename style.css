@@ -227,7 +227,7 @@ body{
 .service .row{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0 4rem;
     margin-top: -7rem;
 }
@@ -322,6 +322,8 @@ body{
 
 
 
+
+
 /* Media Queries */
 @media (max-width: 760px){
     html{
@@ -376,7 +378,6 @@ body{
     .service .row,
     .about .row{
         flex-flow: column;
-        padding: 0 2rem;
         margin-top: 7rem;
         text-align: left;
     }
@@ -385,10 +386,13 @@ body{
         order: 2;
     }
 
-    
     .service .row .image img,
     .about .row .image img{
-        width: 100vw;
+        width: 100%;
         order: 1;
+    }
+
+    .service .row{
+        padding: 0 .5rem;
     }
 }
