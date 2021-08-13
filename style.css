@@ -668,3 +668,15 @@ body{
         width:100%;
     }
 }
+
+@media (max-width:550px){
+    .footer{
+      flex-flow: column;
+    }
+    .footer h1{
+      text-align: center;
+    }
+    .footer .icons{
+      padding:2rem 0;
+    }
+}
